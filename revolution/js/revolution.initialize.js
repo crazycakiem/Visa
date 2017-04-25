@@ -1,4 +1,4 @@
-					var tpj=jQuery;					
+					var tpj=jQuery;
 					var revapi116;
 					tpj(document).ready(function() {
 						if(tpj("#rev_slider_4_1").revolution == undefined){
@@ -9,7 +9,7 @@
 								jsFileLocation:"../revolution/js/",
 								sliderLayout:"auto",
 								dottedOverlay:"none",
-								delay:5000,
+								delay:15000,
 	                            navigation: {
 	                                keyboardNavigation: "on",
 	                                keyboard_direction: "horizontal",
@@ -40,7 +40,7 @@
 	                                        h_offset: 10,
 	                                        v_offset: 0
 	                                    }
-	                                }	                                
+	                                }
 	                            },
 								viewPort: {
 									enable:true,
@@ -48,7 +48,7 @@
 									visible_area:"80%"
 								},
 								gridwidth:1240,
-								gridheight:610,
+								gridheight:410,
 								lazyType:"none",
 								shadow:0,
 								spinner: 'spinner0',

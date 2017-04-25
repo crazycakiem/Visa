@@ -18,7 +18,7 @@
 .link,
 .loadmore-btn > a,
 .event-detail{
-	background-color:#d53362;
+	background-color:#BD0B09;
 }
 
 a:hover,
@@ -70,14 +70,12 @@ ul li:before,
 .search-result > h5 span,
 .events-page .event-detail .event-date span,
 .events-page .event-detail .event-description > i{
-	color:#d53362;
+	color:#BD0B09;
 }
 
 .button:hover,
 .options li a.selected:before,
 .sidebar .widget li:hover:after,
 .layer4{
-	border-color:#d53362 ;
+	border-color:#BD0B09 ;
 }
-
-
