@@ -263,6 +263,13 @@ textarea{
     min-height:180px;
     max-width:100%;
 }
+.animate, .animate *{
+ -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+ -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+ -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+ -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+ transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
 /*=============== Cross Browser Compatibility ===================*/
 a,
 nav > ul ul,
@@ -467,7 +474,24 @@ nav{float:left}
     right:20px;
     width:40px;
 }
-
+header.stickytop{
+     position: fixed;
+    top: 0px;
+    background-color:#FFF;
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+header.stickytop .menubar nav > ul > li > a{margin-top:10px;}
+header.stickytop .topbar{
+display:none;
+}
+header.stickytop .header-search{
+     padding-top: 28px;
+    padding-bottom: 23px;
+}
 /*=============== Dropdown ===================*/
 nav > ul ul{
     position:absolute;
@@ -1900,8 +1924,11 @@ blockquote:before{
     top:60px;
 }
 blockquote.trans{
-     background-color: rgba(256,256,256,.5);
+        background-color: rgba(256,256,256,.5);
     border: 1px solid #eee;
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
 }
 .alignleft{
     float:left;

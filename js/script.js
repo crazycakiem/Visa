@@ -9,11 +9,11 @@ $(window).on("load", function() {
     $(".menu-button").on("click",function(){
         res_menu.addClass("slidein");
         return false;
-    });  
+    });
     $(".close-menu").on("click",function(){
         res_menu.removeClass("slidein");
         return false;
-    });  
+    });
 
 
     /*================== Responsive Menu Dropdown =====================*/
@@ -56,7 +56,7 @@ $(window).on("load", function() {
         margin:0,
         mouseDrag:true,
         items:5,
-        autoplayHoverPause:true,                
+        autoplayHoverPause:true,
         autoHeight:false,
         responsive:{
             1200:{items:5},
@@ -78,17 +78,27 @@ $(window).on("load", function() {
         mouseDrag:false,
         items:1,
         singleItem:true,
-        URLhashListener:true,        
-        autoplayHoverPause:true,                
+        URLhashListener:true,
+        autoplayHoverPause:true,
         autoHeight:false,
         animateIn:"fadeIn",
         animateOut:"fadeOut"
-    }); 
+    });
 
 
     $(".tabs-selectors a").on("click",function(){
         $(this).addClass("active").siblings().removeClass("active");
-    });  
+    });
 
+    $(function(){
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 5) {
+            $('header').addClass('stickytop');
+        }
+        else {
+            $('header').removeClass('stickytop');
+        }
+    });
+});
 
 });
