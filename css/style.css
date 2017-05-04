@@ -417,7 +417,7 @@ nav{float:left}
 .menubar nav > ul > li:before{display:none}
 .menubar nav > ul > li > a{
     float:left;
-    padding: 15px 15px;
+    padding: 10px 13px;
     margin-top: 20px;
     color: #FFF;
 }
@@ -431,7 +431,7 @@ nav{float:left}
     float:right;
     width:45px;
     text-align:center;
-    padding:38px 0;
+    padding: 35px 0 25px;
     position:relative;
     color: #FFF;
 }
@@ -502,8 +502,8 @@ nav > ul ul{
     z-index:1;
     opacity:0;
     visibility:hidden;
-    min-width:275px;
-    padding:20px 0;
+    min-width: 250px;
+    padding: 5px 0;
     background:#FFF;
     -webkit-box-shadow:0px 2px 2px rgba(126, 126, 126, 0.57);
     -moz-box-shadow:0px 2px 2px rgba(126, 126, 126, 0.57);
@@ -513,15 +513,16 @@ nav > ul ul{
     border:2px solid #f5f5f4;
 }
 nav > ul ul li {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     display: table;
     font-family: montserrat;
     font-size: 13px;
     font-weight: 500;
-    padding: 0 40px;
+    padding: 0 20px;
     position: relative;
     text-transform: capitalize;
     width: 100%;
+    margin-bottom: 0;
 }
 nav > ul ul li:before{display:none}
 nav > ul ul li a{
