@@ -99,6 +99,8 @@ h3{font-size:28px}
 h4{font-size:24px}
 h5{font-size:20px}
 h6{font-size:16px}
+.display-none{display:none}
+label{font-weight:bold;}
 p{
     font-family:arimo;
     color:#555555;
@@ -419,8 +421,8 @@ nav{float:left}
 .menubar nav > ul > li:before{display:none}
 .menubar nav > ul > li > a{
     float:left;
-    padding: 10px 13px;
-    margin-top: 20px;
+    padding: 5px 13px;
+    margin-top: 17px;
     color: #FFF;
 }
 .menubar nav > ul > li.active > a{
@@ -433,7 +435,7 @@ nav{float:left}
     float:right;
     width:45px;
     text-align:center;
-    padding: 35px 0 25px;
+    padding: 25px 0 20px;
     position:relative;
     color: #FFF;
 }
@@ -494,8 +496,8 @@ header.stickytop .topbar{
 display:none;
 }
 header.stickytop .header-search{
-     padding-top: 28px;
-    padding-bottom: 23px;
+     padding-top: 19px;
+     padding-bottom: 16px;
 }
 /*=============== Dropdown ===================*/
 nav > ul ul{
@@ -1757,6 +1759,13 @@ nav > ul ul li.has-children:before{
     margin:0;
     padding:0;
 }
+.breadcrumbs.sm-brc{
+ margin-bottom:10px;
+     float: initial;
+}
+.breadcrumbs.sm-brc li:first-child{
+ padding-left:0;
+}
 .breadcrumbs li{
     width:auto;
     float:none;
@@ -1900,6 +1909,11 @@ nav > ul ul li.has-children:before{
     font-weight: 500;
     margin: 0;
     width: 100%;
+}
+.post-title.border-bot{
+     padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
 }
 .detail-page .meta {
     margin: 0 0 15px;
@@ -3565,5 +3579,643 @@ ul.list-embassy li {
 	margin-left: 20px;
 	text-decoration: none;
 }
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.input-group-addon, .input-group-btn, .input-group .form-control {
+    display: table-cell;
+}
+.input-group .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+.input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+}
+.input-group-addon, .input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.style1-sl.input-group{
+     margin-bottom: 20px;
+}
+.style1-sl.input-group .form-control{height: 45px;}
+.style1-sl.input-group .input-group-btn .button{margin-left: 10px;height: 45px;}
+.visa-tips {
+	margin-bottom: 40px;
+}
+.visa-tips .detail-page{
+ padding:0 30px;
+}
+.visa-tips .tip-item {
+	padding-bottom: 10px;
+	display: inline-block;
+}
 
+.visa-tips .tip-item img {
+	float: left;
+	margin-right: 10px;
+	display: inline-table;
+	margin-top: 5px;
+}
 /* End Questions & Answers */
+/* Review */
+#review-detail {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 3px 3px 3px 3px;
+    margin: 40px 0px 20px;
+    padding: 10px 0;
+}
+#review-detail ul.tabs {
+    border-bottom: 1px solid #D4D4D4;
+    padding-bottom: 28px;
+    list-style-type: none;
+    padding-left: 0px;
+}
+#review-detail ul.tabs li {
+    color: #666666;
+    float: left;
+    padding-right: 20px;
+}
+#review-detail ul.tabs li a.selected {
+    border-bottom: 3px solid #E41E01;
+    color: #E41E01;
+    font-weight: bold;
+}
+#review-detail ul.tabs li a {
+    color: #2A2A2A;
+    font-size: 14px;
+    padding: 8px 0;
+    text-decoration: none;
+}
+#review-detail div.tab-selected {
+    display: block;
+}
+#review-detail div.tab-content {
+    display: none;
+}
+#review-detail .summary-box .label {
+    font-size: 18px;
+    line-height: 28px;
+}
+#review-detail .summary-box .rating {
+    margin-left: 10px;
+}
+#review-container .review-form {
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 14px 8px -12px #CCCCCC;
+    margin: 10px 0;
+    padding: 10px;
+}
+#review-container .review-form table {
+    margin-left: 20px;
+}
+#review-container .review-form table.tbl-review td {
+    vertical-align: top;
+}
+#review-container .review-form td {
+    padding: 6px 4px;
+}
+#review-container .review-form td input[type="text"] {
+    width: 500px;
+}
+#review-container .review-form td select {
+    width: 250px;
+}
+#review-container .review-form td textarea {
+    height: 100px;
+    width: 500px;
+}
+#review-container .review-box {
+	margin-top: 20px;
+}
+#review-container .review-box .name {
+	font-size: 14px;
+	margin-left: 10px;
+}
+#review-container .review-box .location {
+	color: #999999;
+	font-size: 11px;
+    margin-top: 10px;
+	margin-left: 10px;
+}
+#review-container .review-box .item {
+    margin-top: 20px;
+}
+#review-container .review-box .item .rating {
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+}
+#review-container .review-box .item .title {
+    font-size: 16px;
+}
+#review-container .review-box .item .date {
+	color: #999999;
+	font-size: 11px;
+    margin-top: 10px;
+}
+#review-container .review-box .item .text {
+    line-height: 18px;
+    text-align: justify;
+    margin-top: 10px;
+}
+#review-container .review-box .item .respond {
+	background: url("../images/support-40x40.jpg") no-repeat scroll 10px 10px #FFFFFF;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 14px 8px -12px #CCCCCC;
+    margin: 10px 0;
+    padding: 15px 15px 15px 70px;
+}
+#review-container .review-box .item .respond.guest {
+	background-image: url("../images/no-avatar.gif");
+}
+#question-container .question-form {
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 14px 8px -12px #CCCCCC;
+    margin: 10px 0;
+    padding: 10px;
+}
+#question-container .question-form table {
+    margin-left: 20px;
+}
+#question-container .question-form table.tbl-review td {
+    vertical-align: top;
+}
+#question-container .question-form td {
+    padding: 6px 4px;
+}
+#question-container .question-form td input[type="text"] {
+    width: 500px;
+}
+#question-container .question-form td select {
+    width: 250px;
+}
+#question-container .question-form td textarea {
+    height: 100px;
+    width: 500px;
+}
+#question-container .question-box {
+	margin-top: 20px;
+}
+#question-container .question-box .name {
+	font-size: 14px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+#question-container .question-box .location {
+	color: #999999;
+	font-size: 12px;
+	margin-top: 0px;
+	margin-left: 10px;
+}
+#question-container .question-box .item {
+    margin-top: 20px;
+}
+#question-container .question-box .item .avatar {
+    margin-bottom: 20px;
+}
+#question-container .question-box .item .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+#question-container .question-box .item .respond .title {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 0px;
+}
+#question-container .question-box .item .date {
+	color: #999999;
+	font-size: 12px;
+    margin-top: 10px;
+}
+#question-container .question-box .item .text {
+    line-height: 18px;
+    text-align: justify;
+    margin-top: 10px;
+}
+#question-container .question-box .item .respond {
+	background: url("../images/support-40x40.jpg") no-repeat scroll 15px 15px #FFFFFF;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 14px 8px -12px #CCCCCC;
+    margin: 10px 0;
+    padding: 15px 15px 15px 70px;
+}
+#question-container .question-box .item .respond.guest {
+	background-image: url("../images/no-avatar.gif");
+}
+/* End Review */
+/* Apply Form */
+
+.sl-apply {
+	display: table;
+	margin: 10px -15px;
+    height: auto;
+    width: 100%;
+}
+
+.sl-apply input {
+	margin: 5px 14px 0 0;
+    vertical-align: top;
+}
+
+.sl-apply .bg-title {
+	font-size: 22px;
+	display: inline-block;
+	background: url(../images/home/icon/i-page.png) no-repeat left center transparent;
+	padding-left: 44px;
+	line-height: 24px;
+}
+
+.sl-apply .not-sl {
+	background: url(../images/home/icon/i-page-not.png) no-repeat left center transparent !important;
+	color: #b2b1b1;
+}
+
+.tab-step {
+    border-bottom: 3px solid #DE4A4A;
+	margin: 0 0 30px;
+}
+.tab-step h1.note {
+    float: left;
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+ul.style-step {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+    float: right;
+    vertical-align: baseline;
+}
+ul.style-step li {
+	background-color: #F2F3F3;
+	color: #A2A2A2;
+	display: inline;
+	float: left;
+	font-weight: bold;
+	margin-left: 2px;
+	padding: 6px 15px;
+	width: auto;
+}
+ul.style-step li font.number {
+    font-size: 20px;
+}
+ul.style-step li:before{
+ display:none;
+}
+ul.style-step li.active {
+    background: none repeat scroll 0 0 #DE4A4A;
+    color: #FFFFFF;
+}
+.applyform input[type="text"].error, input.error, select.error {
+    border: 1px solid #DF1F26 !important;
+}
+.applyform div.error {
+    border: 1px dotted #DF1F26;
+}
+.rush-info {
+	background-color: #F5F8FB;
+	padding: 10px;
+}
+.rush-info a {
+	text-decoration: underline;
+}
+.applyform input[type="text"] {
+}
+.applyform select {
+}
+.applyform textarea {
+}
+
+.applyform .passport-attachment {
+}
+
+.applyform .passport-photo {
+	border: 1px solid #ddd;
+	padding: 2px;
+}
+
+.applyform .passport-data {
+	border: 1px solid #ddd;
+	padding: 2px;
+}
+
+.applyform .passport-photo,
+.applyform .passport-data {
+	height: 250px;
+}
+
+.applyform .passport-photo .img,
+.applyform .passport-data .img {
+	position: relative;
+}
+
+.applyform .passport-photo .img .select-overlay,
+.applyform .passport-data .img .select-overlay {
+	position: absolute;
+	top: 0px;
+	background: transparent;
+	transition-duration: 0.5s;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+}
+
+.applyform .passport-photo .img .select-overlay:hover,
+.applyform .passport-data .img .select-overlay:hover {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.applyform .passport-photo .img .select,
+.applyform .passport-data .img .select {
+	position: absolute;
+	bottom: 0px;
+	padding: 8px 10px;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	text-align: center;
+}
+
+.applyform .passport-photo .img .btn-file-delete,
+.applyform .passport-data .img .btn-file-delete {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	background: #DE4A4A;
+	color: #fff;
+	text-align: center;
+	cursor: pointer;
+}
+
+.applyform .passport-photo .img {
+	background: url("../images/passport-photo.jpg") no-repeat scroll center center transparent;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+
+.applyform .passport-data .img {
+	background: url("../images/passport-data.jpg") no-repeat scroll center center transparent;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+
+.processing-note {
+	background-color: #ECEFF1;
+	color: #444;
+	margin-top: 12px;
+	padding: 15px;
+	font-size: 12px;
+	position: relative;
+}
+.processing-note ul{
+     padding-left: 50px;
+    margin: 0;
+}
+.processing-note ul li{
+     font-size: 1em;
+    line-height: initial;
+}
+.processing-note.note-success {
+	background-color: #dff0d8;
+}
+
+.processing-note.note-primary {
+	background-color: #409DD2;
+	color: #fff;
+}
+
+.processing-note:before {
+	position: absolute;
+	display: block;
+	top: -12px;
+	left: 20px;
+	content: " ";
+	box-sizing: border-box;
+	z-index: 2;
+	border-color: transparent transparent rgb(236, 239, 241);
+	border-style: solid;
+	border-width: 6px;
+}
+
+.processing-note.note-success:before {
+	border-color: transparent transparent rgb(223, 240, 216);
+}
+
+.processing-note.note-primary:before {
+	border-color: transparent transparent rgb(64, 157, 210);
+}
+
+.panel-options {
+}
+
+.panel-options .div {
+	padding-top: 15px;
+	width: 100%;
+	height: 1px;
+	border-top: 1px solid #CCC;
+	display: block;
+}
+
+.panel-fees {
+	background-color: #FFFFFF;
+    padding: 0px;
+    border: 1px solid #DDDDDD;
+    position: relative;
+}
+.panel-fees ul {
+	list-style: none;
+	margin: 10px 0px 0px 0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+	float: none;
+}
+.panel-fees li {
+    border-bottom: 1px solid #BDC6CA;
+    padding: 10px;
+}
+.panel-fees .last {
+    border-bottom: 1px solid #6997B3;
+}
+.panel-fees span, .panel-fees table.extra_service {
+    float: right;
+}
+.panel-fees label span {
+    float: none !important;
+}
+.panel-fees table.extra_service td {
+    padding: 0px 0px 10px 0px;
+}
+.panel-fees .total {
+	border: none;
+	margin-top: -1px;
+	/* border-top: 1px solid #6997B3; */
+}
+.panel-fees .price {
+    color: #005286;
+    font-weight: bold;
+}
+.panel-fees .service-fee-item {
+    padding-bottom: 15px;
+}
+.panel-fees .service-fee-item:last-child {
+    padding-bottom: 0px;
+}
+.panel-fees .processing-time-item {
+    padding-bottom: 15px;
+}
+.panel-fees .processing-time-item:last-child {
+    padding-bottom: 0px;
+}
+.panel-fees .full-package-item {
+    padding-bottom: 15px;
+}
+.panel-fees .full-package-item:last-child {
+    padding-bottom: 0px;
+}
+.panel-fees .discount_t {
+    color: #005286;
+    font-weight: bold;
+}
+.panel-fees .total span {
+    color: #DC2222;
+    font-size: 16px;
+    font-weight: bold;
+}
+.panel-fees .payment-methods {
+	background-color: #ECEFF1;
+	text-align: center;
+	padding: 12px 20px;
+	margin-top: 10px;
+}
+.promotion-input {
+}
+.applyform.step2 .group {
+	border: 1px solid #DDD;
+	margin-bottom: 15px;
+}
+.applyform.step2 .group h2 {
+	background-color: #F1F1F1;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 12px 15px;
+    color: #D40000;
+}
+.applyform.step2 .group .group-content .form-control {
+	padding: 4px;
+	font-size: 12px;
+}
+.applyform.step2 .group .group-content {
+	padding: 15px;
+}
+.applyform.step2 .group .group-content .passport-detail {
+	font-size: 12px;
+	margin-left: -2px;
+	margin-right: -2px;
+}
+.applyform.step2 .group .group-content .passport-detail *[class*="col-"] {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.applyform.step2 .group .group-content .passport-detail *[class*="col-"] .row {
+	margin-left: -2px;
+	margin-right: -2px;
+}
+.applyform.step2 .group .group-content .passport-detail .form-control {
+	margin-bottom: 15px;
+}
+.terms_conditions_confirm {
+	text-decoration: underline;
+}
+
+.applyform.step3 .table-summary {
+    border-collapse: collapse;
+    margin: 0 0 18px 0;
+}
+.applyform.step3 h3 {
+}
+.applyform.step3 .table-summary th,
+.applyform.step3 .table-summary td {
+    padding: 7px 10px;
+    border: 1px solid #DDD;
+}
+.applyform.step3 .table-summary th {
+    background: #F1F1F1;
+}
+.applyform.step3 .table-summary td {
+    font-weight: normal;
+}
+.applyform.step3 .table-summary .total {
+	font-weight: bold;
+    color: red;
+}
+
+.applymore15 {
+    padding: 15px 0px;
+}
+.applymore15 p {
+    line-height: 10px;
+}
+.applymore15 a {
+    text-decoration: underline;
+}
+.applymore15 .here {
+    text-decoration: underline;
+}
+input.processing_time{
+ width:auto;
+ height: auto;
+ top: 9px;
+}
+.checkbox input{
+ width:auto;
+ height: auto;
+ top: 9px;
+}
+.form-group.passport-detail label.form-label{
+
+}
+.applyform.step2 .group .group-content .passport-detail *[class*="col-"]{
+     padding-left: 2px;
+    padding-right: 2px;
+}
+/* End Apply Form */
+.alert-info {
+    color: #2A2A2A;
+    background-color: #BDE5F8;
+    border-color: #46B6EC;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+.alert-dismissable, .alert-dismissible {
+    padding-right: 35px;
+}
