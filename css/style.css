@@ -105,8 +105,8 @@ p{
     font-family:arimo;
     color:#555555;
     font-size:14px;
-      letter-spacing:0.3px;
-    margin-bottom:30px;
+    letter-spacing:0.3px;
+    margin-bottom: 10px;
 }
 a{color:inherit}
 a:hover,
@@ -1818,7 +1818,7 @@ nav > ul ul li.has-children:before{
     text-align:center;
     margin-top:80px;
     padding:0;
-    margin-bottom:0;
+    margin-bottom: 40px;
 }
 .pagination li{
     float:none;
@@ -1851,6 +1851,7 @@ nav > ul ul li.has-children:before{
     -ms-border-radius:6px;
     -o-border-radius:6px;
     border-radius:6px;
+    line-height: 35px;
 }
 .pagination li a img{
     float:none;
@@ -2881,7 +2882,10 @@ margin-bottom:10px;
     float: none;
     margin: 0;
     vertical-align: top;
-    width: auto;
+    width: 35%;
+}
+.list .edu-post.sm-img .post-img{
+
 }
 .list .edu-post .post-img img{width: auto}
 .list .edu-post .post-detail {
@@ -2894,6 +2898,11 @@ margin-bottom:10px;
 .list.sv-list .edu-post .post-detail{
  vertical-align: top;
 }
+.post-detail ul{
+ padding-left: 25px;
+}
+.post-detail ul li{margin-bottom:0;line-height: 1.6em;}
+.post-detail ul li span{margin-bottom:0;line-height: em;}
 .search-result ~ .edu-blog.list{padding-right: 100px}
 
 /*=============== Registration Page ===================*/
@@ -3369,9 +3378,9 @@ hr.w-90{width:90%; margin-bottom:0;}
  padding:0 20px 20px;
 }
 .list-faq>div{
-    border-bottom: 1px dashed;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+    /* border-bottom: 1px dashed; */
+    /* padding-bottom: 20px; */
+    /* margin-bottom: 20px; */
 }
 /* Embassy List */
 
@@ -4219,3 +4228,178 @@ input.processing_time{
 .alert-dismissable, .alert-dismissible {
     padding-right: 35px;
 }
+.red, .required, .text-color-red {
+    color: #FF0000;
+}
+/* Vietnam Visa Fees */
+
+.stamping-fee .heading {
+	margin-top: 0px;
+	text-transform: uppercase;
+	color: red;
+}
+
+.stamping-fee ul {
+	list-style-type: square;
+    margin: 0;
+    padding-left: 15px;
+    color: #999;
+}
+
+.stamping-fee ul li {
+}
+
+.stamping-fee ul li span {
+    color: #464646;
+}
+
+.pricing-table th {
+	background-color: #868686;
+	color: #FFF;
+}
+
+.pricing-table th.sub-heading {
+	background-color: #9e9e9e;
+	color: #FFF;
+}
+
+.pricing-table td {
+	background-color: #ededed;
+	color: #333;
+}
+
+.pricing-table th,
+.pricing-table td {
+	border-color: #fff !important;
+}
+
+/* End Vietnam Visa Fees */
+.security-code {
+	color: red;
+	font-family: Comic Sans MS;
+	font-size: 16px;
+	font-weight: bold;
+/*	background: url("../images/bg-captcha.png") no-repeat;*/
+	width: 80px;
+	height: 30px;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 6px;
+	text-align: center;
+}
+
+.i-help {
+/*	background: url("../images/i-help.gif") no-repeat 0 0 transparent;*/
+	width: 15px;
+	height: 15px;
+	margin-left: 5px;
+	display: inline-block;
+}
+.mb-20{margin-bottom:20px}
+/* Extra Service Form */
+
+.service-form {
+    background: none repeat scroll 0 0 #F8F8F8;
+    border: 1px solid #DDDDDD;
+    padding: 20px 15px;
+}
+.service-form label {
+	font-weight: normal;
+}
+.service-form .service-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 0px;
+    text-transform: uppercase;
+}
+.service-form ul {
+    list-style: none;
+    padding: 0px;
+}
+.service-form ul.form-left li {
+    list-style-type: none;
+    margin-left: 0px;
+}
+.service-form .step-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0px;
+}
+.airport-service-form {
+	margin-top: 20px;
+}
+.airport-service-form .div {
+	border-bottom: 1px solid #FFFFFF;
+	border-top: 1px solid #DDDDDD;
+	margin: 10px 0px;
+}
+.airport-service-form .service-options {
+	margin-top: 10px;
+}
+.airport-service-form .service-options .tbl-service-options {
+	margin-left: 10px;
+}
+.airport-service-form .service-options .tbl-service-options tr {
+	border-bottom: 1px dotted #DDDDDD;
+	vertical-align: top;
+}
+.airport-service-form .service-options .tbl-service-options tr.last-child {
+	border-bottom: none;
+}
+.airport-service-form .service-options .tbl-service-options td {
+	padding: 10px 5px;
+}
+.airport-service-form .service-options .arrival-port {
+}
+.airport-service-form .service-options .group-size {
+}
+.airport-service-form .service-options ul li {
+    list-style-type: none;
+    margin-left: 0px;
+}
+.airport-service-form .contact-information {
+	margin-top: 10px;
+}
+.airport-service-form .contact-information .name-prefix {
+}
+.airport-service-form .contact-information .tbl-contact-information {
+	margin-left: 10px;
+}
+.airport-service-form .contact-information .tbl-contact-information td {
+	padding: 5px;
+}
+.airport-service-form .contact-information .welcome-name {
+}
+.airport-service-form .contact-information .arrival-date {
+}
+.airport-service-form .contact-information .flight-number {
+}
+.airport-service-form .contact-information .welcome {
+	font-size: 14px;
+	font-weight: bold;
+}
+.airport-service-form .contact-information .welcome-name-t {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 14px 0px;
+}
+.airport-service-form .contact-information .welcome-board {
+	width: 100%;
+	background-color: #FFFFFF;
+	padding: 10px;
+	text-align: center;
+}
+.airport-service-form .contact-information .fullname {
+}
+.airport-service-form .contact-information .email {
+}
+.airport-service-form .contact-information .phone-number {
+}
+.airport-service-form .contact-information .special-request {
+}
+.airport-service-form .contact-button {
+	margin-top: 20px;
+	text-align: center;
+}
+
+/* End Extra Service Form */
