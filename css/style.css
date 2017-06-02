@@ -267,6 +267,10 @@ textarea{
     min-height:180px;
     max-width:100%;
 }
+.radio input{
+ height:20px;
+ min-height:20px;
+}
 .animate, .animate *{
  -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
  -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
@@ -391,8 +395,9 @@ header .container{
     vertical-align:middle;
 }
 .registration{float:right}
-.registration a{
+.registration div{
     float:left;
+    position:relative;
     font-size:11px;
     color:#555;
     font-family:montserrat;
@@ -401,7 +406,14 @@ header .container{
     margin-left:10px;
     border-left:1px solid #7f7f7f;
 }
-.registration a:first-child{border-left:0}
+.registration div:first-child{border-left:0}
+.registration div .dropdown-menu li{
+ margin-bottom: 0;
+}
+.registration div .dropdown-menu li a{font-size: .8em;text-transform: capitalize;}
+.registration div .dropdown-menu li a i{
+
+}
 .menubar{
     float:left;
     width:100%;
@@ -565,6 +577,7 @@ nav > ul ul li.has-children:before{
     position:relative;
     z-index:10000;
     display:none;
+    background-color: #BD0B09;
 }
 .responsive-header .topbar{padding:15px}
 .responsive-header .topbar:after,
@@ -574,7 +587,7 @@ nav > ul ul li.has-children:before{
     float:left;
     width:100%;
     text-align:center;
-    padding:25px 10px;
+    padding: 20px 10px;
     border-bottom:3px solid #cecece;
 }
 .responsive-logo{float:left}
@@ -4458,3 +4471,5 @@ input.processing_time{
 .footer .needhelp .needhelp-text a {
 	color: #FFFFFF;
 }
+/*menu responsive*/
+.responsive-menu ul li span.socials a{width: 30px;text-align: center;}
